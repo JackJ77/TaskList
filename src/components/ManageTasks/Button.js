@@ -12,6 +12,7 @@ const btnStyle = {
 const Button = (props) => {
   return (
     <button
+        onClick={props.handleClick}
         style={btnStyle}
         type="button"> {props.type}
     </button>

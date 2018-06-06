@@ -5,9 +5,9 @@ const ManageTasks = (props) => {
 
     return (
       <div>
-        <Button onClick={props.onAdd} type='Add' />
-        <Button onClick={props.onRemove} type='Remove' />
-        <Button onClick={props.onClear} type='Clear' />
+        <Button handleClick={props.onAdd} type='Add' />
+        <Button handleClick={props.onRemove} type='Remove' />
+        <Button handleClick={props.onClear} type='Clear' />
       </div>
     );
 };
