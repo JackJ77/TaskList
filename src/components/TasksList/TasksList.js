@@ -10,7 +10,7 @@ const TasksList = (props) => {
   const tasks = props.tasks.map(task => {
     return (
       <li key={task}>
-        Task number #{task}
+        Task number {task}
       </li>
     );
   });
