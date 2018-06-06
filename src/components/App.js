@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ManageTasks from './ManageTasks/ManageTasks';
+import TasksList from './TasksList/TasksList';
 import './App.css';
 
 class App extends Component {
@@ -33,6 +34,7 @@ class App extends Component {
           onAdd={this.handleAdd}
           onRemove={this.handleRemove}
           onClear={this.handleClear}/>
+          <TasksList tasks={this.state.tasks} />
       </div>
     );
   }
